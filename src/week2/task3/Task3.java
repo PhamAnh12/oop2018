@@ -3,8 +3,7 @@ package week2.task3;
 public class Task3 {
 }
 
-//TODO: khai báo 3 class tương ứng với 3 đối tượng thực tế ở dưới
-public class Monhoc {
+//TODO: khai báo 3 class tương ứng với 3 đối tượng thực tế ở dướiclass Monhoc {
     private String tenmonhoc;
     private String mamonhoc;
     private int sotc;
@@ -95,7 +94,7 @@ public class Monhoc {
 
 
 }
-public class Cat {
+ class Cat {
     private String ten;
     private int cannang;
     private String mausac;
@@ -162,7 +161,7 @@ public class Cat {
     }
 
 }
-public class teacher {
+ class teacher {
     private  String ten;
     private String email;
     private String monday;
