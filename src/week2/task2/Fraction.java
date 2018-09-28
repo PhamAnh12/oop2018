@@ -1,5 +1,6 @@
 package week2.task2;
 
+
 public class Fraction {
 
     // TODO: khai báo các thuộc tính
