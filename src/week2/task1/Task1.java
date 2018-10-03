@@ -33,8 +33,8 @@ public class Task1 {
     }
 
     public static void main(String[] args) {
-        System.out.println(week2.task1.Task1.gcd(8, 10));
-        System.out.println(week2.task1.Task1.fibonacci(6));
+        System.out.println(Task1.gcd(8, 10));
+        System.out.println(Task1.fibonacci(6));
 
     }
 }

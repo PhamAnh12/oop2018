@@ -47,12 +47,12 @@ public class Fraction {
         this.setDenominator(this.getDenominator() / i);
     }
 
-    public week2.task2.Fraction add(week2.task2.Fraction other) {
+    public Fraction add(Fraction other) {
         // TODO: Phương thức cộng hai phân số (this và other), trả về đối tượng Fraction mới
 
         int ts = this.getNumerator() * other.getDenominator() + other.getNumerator() * this.getDenominator();
         int ms = this.getDenominator() * other.getDenominator();
-        week2.task2.Fraction p = new week2.task2.Fraction(ts, ms);
+        Fraction p = new Fraction(ts, ms);
         if (p.numerator != 0) {
             p.toiGianPhanSo();
         }
@@ -60,7 +60,7 @@ public class Fraction {
     }
 
 
-    public week2.task2.Fraction subtract(week2.task2.Fraction other) {
+    public Fraction subtract(Fraction other) {
         // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
         int ts = this.getNumerator() * other.getDenominator() - other.getNumerator() * this.getDenominator();
         int ms = this.getDenominator() * other.getDenominator();
@@ -72,18 +72,18 @@ public class Fraction {
 
     }
 
-    public week2.task2.Fraction multiply(week2.task2.Fraction other) {
+    public Fraction multiply(Fraction other) {
         // TODO: Phương thức nhân hai phân số (this và other), trả về đối tượng Fraction mới
         int ts = this.numerator * other.numerator;
         int ms = this.getDenominator() * other.getDenominator();
-        week2.task2.Fraction p = new week2.task2.Fraction(ts, ms);
+        Fraction p = new Fraction(ts, ms);
         if (p.numerator != 0) {
             p.toiGianPhanSo();
         }
         return p;
     }
 
-    public week2.task2.Fraction divide(week2.task2.Fraction other) {
+    public Fraction divide(Fraction other) {
         // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
         int ts = this.numerator * other.denominator;
         int ms = this.getDenominator() * other.numerator;
@@ -94,7 +94,7 @@ public class Fraction {
         return p;
     }
 
-    public static void hienthiphanso(week2.task2.Fraction p) {
+    public static void hienthiphanso(Fraction p) {
         if (p.numerator == 0 || p.denominator == 1) System.out.println(p.numerator);
         else System.out.println(p.numerator + "/" + p.denominator);
     }
@@ -108,8 +108,8 @@ public class Fraction {
 
     public static void main(String[] args) {
 
-        week2.task2.Fraction ps1 = new week2.task2.Fraction(1, 5);
-        week2.task2.Fraction ps2 = new week2.task2.Fraction(1, 3);
+        Fraction ps1 = new Fraction(1, 5);
+        Fraction ps2 = new Fraction(1, 3);
         if (ps1.denominator == 0 || ps2.denominator == 0) {
             System.out.println("Phan so khong hop le:");
         } else {
