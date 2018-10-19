@@ -5,7 +5,7 @@ public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
 
-    public Rectangle() {
+    public Rectangle(String color, boolean filled, double side) {
 
     }
 
