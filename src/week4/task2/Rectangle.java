@@ -1,30 +1,25 @@
+
 package week4.task2;
 
 public class Rectangle extends Shape {
-    protected double width = 1.0, length = 1.0;
+    private double width = 1.0;
+    private double length = 1.0;
 
-    //Contructor
-    public
-    Rectangle(String color, boolean filled) {
-        super(color, filled);
-    }
-    //Contructor
-    public
-    Rectangle() {
+    public Rectangle() {
+
     }
 
-    //Contructor
-    public
-    Rectangle(String color, boolean filled, double width) {
+    public Rectangle(double width, double legth) {
+        this.width = width;
+        this.length = legth;
+    }
+
+    public Rectangle(String color, boolean filled, double width, double legth) {
         super(color, filled);
         this.width = width;
+        this.length = legth;
     }
 
-    public
-    Rectangle(double w, double l){
-        width = w;
-        length = l;
-    }
     public double getWidth() {
         return width;
     }
@@ -37,19 +32,25 @@ public class Rectangle extends Shape {
         return length;
     }
 
-    public void setLength(double length) {
-        this.length = length;
-    }
-    public double getArea(){
-        return width*length;
+    public void setLength(double legth) {
+        this.length = legth;
     }
 
-    public double getPerimeter(){
-        return 2*(width+length);
+    public double getArea() {
+        return width * length;
+    }
+
+    public double getPerimeter() {
+        return (width + length) * 2;
     }
 
     @Override
     public String toString() {
-        return super.toString() + "Chieu dai: " + width + " Chieu rong: " + length;
+        return "Rectangle\nWidth: " + width
+                + "\nLength: " + length
+                + "\nArea: " + getArea()
+                + "\nPerimeter: " + getPerimeter()
+                + super.toString() + "\n";
     }
 }
+

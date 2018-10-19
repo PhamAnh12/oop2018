@@ -1,41 +1,50 @@
+
 package week4.task1;
 
 public class HoaQua {
     private String nguongoc, hinhdang;
 
-    public String getNguongoc() {
+    public
+    String getNguongoc() {
         return nguongoc;
     }
 
-    public void setNguongoc(String nguongoc) {
+    public
+    void setNguongoc(String nguongoc) {
         this.nguongoc = nguongoc;
     }
 
-    public String getHinhdang() {
+    public
+    String getHinhdang() {
         return hinhdang;
     }
 
-    public void setHinhdang(String hinhdang) {
+    public
+    void setHinhdang(String hinhdang) {
         this.hinhdang = hinhdang;
     }
 
-    public HoaQua() {
+    public
+    HoaQua() {
         nguongoc = "VietNam";
         hinhdang = "tron";
     }
 
-    public boolean XuatXuOChauA() {
+    public
+    boolean XuatXuOChauA() {
         if (nguongoc.equalsIgnoreCase("VietNam"))
             return true;
         return false;
     }
 
-    public void ShowInfo() {
+    public
+    void ShowInfo() {
         System.out.println("Nguoc Goc: " + nguongoc);
         System.out.println("Hinh dang: " + hinhdang);
     }
 
-    public static void main(String[] args) {
+    public static
+    void main(String[] args) {
         HoaQua hoaQua = new HoaQua();
         Cam cam = new Cam();
         Tao tao = new Tao();

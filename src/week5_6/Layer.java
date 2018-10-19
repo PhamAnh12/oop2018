@@ -11,6 +11,7 @@ public class Layer extends Diagram{
                 shapeList.remove(i);
             i--;
         }
+
     }
 
 }

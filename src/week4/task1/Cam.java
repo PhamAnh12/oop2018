@@ -1,3 +1,6 @@
+
+
+
 package week4.task1;
 
 public class Cam extends HoaQua {
@@ -39,7 +42,6 @@ public class Cam extends HoaQua {
         System.out.println("Mau cua Cam: " + mau);
         System.out.println("San Luong cua Cam: " + sanluong);
     }
-
 
 
 
