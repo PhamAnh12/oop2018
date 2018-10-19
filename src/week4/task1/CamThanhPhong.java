@@ -22,11 +22,11 @@ public class CamThanhPhong extends Cam {
 
     public CamThanhPhong() {
         gia = 27000;
-        xuatxu = "Thanh Phong-Hoa Binh";
+        xuatxu = "Thanh Phong - Hoa Binh";
     }
 
     public boolean xuatxuvungdacsan() {
-        if (xuatxu == "Thanh Phong-Hoa Binh")
+        if (xuatxu == "Thanh Phong - Hoa Binh")
             return true;
         return false;
     }

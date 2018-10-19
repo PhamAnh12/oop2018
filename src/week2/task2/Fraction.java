@@ -1,5 +1,6 @@
 package week2.task2;
 
+
 public class Fraction {
 
     // TODO: khai báo các thuộc tính
@@ -64,7 +65,7 @@ public class Fraction {
         // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
         int ts = this.getNumerator() * other.getDenominator() - other.getNumerator() * this.getDenominator();
         int ms = this.getDenominator() * other.getDenominator();
-        week2.task2.Fraction p = new week2.task2.Fraction(ts, ms);
+        Fraction p = new Fraction(ts, ms);
         if (p.numerator != 0) {
             p.toiGianPhanSo();
         }
@@ -87,7 +88,7 @@ public class Fraction {
         // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
         int ts = this.numerator * other.denominator;
         int ms = this.getDenominator() * other.numerator;
-        week2.task2.Fraction p = new week2.task2.Fraction(ts, ms);
+        Fraction p = new Fraction(ts, ms);
         if (p.numerator != 0) {
             p.toiGianPhanSo();
         }

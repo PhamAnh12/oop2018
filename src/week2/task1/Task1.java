@@ -25,14 +25,14 @@ public class Task1 {
         }
         if (n == 1) {
             return 1;
-        }
-        else {
+        } else {
 
-            return fibonacci(n-1) + fibonacci(n-2);
+            return fibonacci(n - 1) + fibonacci(n - 2);
         }
     }
 
     public static void main(String[] args) {
+
         System.out.println(Task1.gcd(8, 10));
         System.out.println(Task1.fibonacci(6));
 
